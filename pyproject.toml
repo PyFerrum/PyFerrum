@@ -1,0 +1,11 @@
+[build-system]
+requires = ["maturin>=1.0"]
+build-backend = "maturin"
+
+[project]
+name = "PyFerrum"
+version = "0.1.0"
+description = "A high-performance data processing and file optimization framework using Rust and Python"
+authors = [{ name = "Junwon Lee", email = "cpprhtn@gmail.com" }]
+dependencies = ["maturin (>=1.8.2,<2.0.0)"]
+requires-python = ">=3.9"

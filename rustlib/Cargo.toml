@@ -1,0 +1,13 @@
+[package]
+name = "pyferrum"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]  # Python에서 호출 가능하도록 설정
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+rayon = "1.8"  # 멀티스레드 지원
+csv = "1.2"    # CSV 파일 처리
+flate2 = "1.0"  # 압축 지원
